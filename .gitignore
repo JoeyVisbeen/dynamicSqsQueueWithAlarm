@@ -1,0 +1,10 @@
+/.idea/
+/cdk/test/
+/cdk/.gitignore
+/cdk/tsconfig.json
+/cdk/.npmignore
+/cdk/jest.config.js
+/cdk/package.json
+/cdk/README.md
+/cdk/package-lock.json
+/cdk/cdk.json
