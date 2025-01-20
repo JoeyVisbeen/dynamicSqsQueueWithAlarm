@@ -26,11 +26,11 @@ export class CdkStack extends cdk.Stack {
     /**
      * Custom construct for
      */
-    const productiveQueue = new sqsQueueWithAlarm(this, 'productiveQueue', {
+    const nameQueue = new sqsQueueWithAlarm(this, 'nameQueue', {
       maxReceiveCount: 3,
       topicArn: dlqTopic.topicArn,
       queueSettings: {
-        queueName: 'productiveQueue.fifo',
+        queueName: 'nameQueue.fifo',
         visibilityTimeout: Duration.minutes(15),
         contentBasedDeduplication: true
       }
